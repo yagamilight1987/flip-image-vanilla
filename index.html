@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flip Image</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="form-container">
+            <input type="text" id="imageUrl" placeholder="Enter image url here..." />
+            <button id="load">Load</button>
+        </div>
+        <div class="image-container">
+            <img id="my-image" src="pic.jpg" />
+            <div class="controls-container">
+                <button class="btn vertical up" onclick="flip('y')"><i class="fas fa-arrow-up"></i></button>
+                <button class="btn horizontal left" onclick="flip('x')"><i class="fas fa-arrow-left"></i></button>
+                <button class="btn horizontal right" onclick="flip('x')"><i class="fas fa-arrow-right"></i></button>
+                <button class="btn vertical down" onclick="flip('y')"><i class="fas fa-arrow-down"></i></button>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+
+</html>
